@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar1{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+
+} 
+
+#heading
+{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    left: 13vw;
+    right: 13vw;
+    position:absolute;
+    top: 20vh;
+    z-index: 1;
+}
+#ordernowbtn{
+    background-color: rgb(55, 92, 0);
+    color: aliceblue;
+    padding: .4vh .5vw;
+    border: none;
+    margin-top: 4rem;
+    border-radius: 1vw;
+}
+#ordernowbtn a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+#heading h1{
+    
+    font-size: 3rem;
+    text-align: center;
+    color: aliceblue;
+}
+#main{
+    height: 70vh;
+    width: 100%;
+    /* background-color: red; */
+    /* border: 2px solid black; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), */
+    animation: changeimg 20s infinite ;
+}
+@keyframes changeimg {
+    0%{
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('Images/11.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    25%{
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('Images/12.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    50%{
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('Images/6.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+    75%{
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('Images/4.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+    100%{
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('Images/9.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+    
+}
+
+#bbb{
+    background-color: brown;
+    height: 100vh;
+}
